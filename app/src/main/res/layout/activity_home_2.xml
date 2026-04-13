@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_8"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/margin_30"
+                    android:layout_height="@dimen/margin_30"
+                    android:layout_gravity="start"
+                    android:layout_margin="@dimen/margin_10"
+                    android:src="@drawable/ic_menu"
+                    app:tint="@color/appColor" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/margin_10"
+                    android:textSize="@dimen/font_24"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:visibility="visible"
+                    android:layout_weight="1"
+                    android:text="Career Path Navigator"
+                    android:fontFamily="@font/catilde_semibold"
+
+                    />
+                <ImageView
+                    android:layout_width="@dimen/margin_30"
+                    android:layout_height="@dimen/margin_30"
+                    android:src="@drawable/ic_notifications_black_24dp"
+                    app:tint="@color/appColor"
+                    android:layout_margin="@dimen/margin_10"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="@dimen/margin_8"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dashboard Page"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/margin_20"
+                android:textSize="@dimen/font_24"
+                android:layout_marginTop="@dimen/margin_15"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student Info"
+                android:layout_marginStart="@dimen/margin_20"
+                android:textSize="@dimen/font_24"
+                android:layout_marginTop="@dimen/margin_15"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:paddingHorizontal="@dimen/margin_10"
+                android:paddingVertical="@dimen/margin_8"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginHorizontal="@dimen/margin_20">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:hint="Name:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14"
+                    />
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:hint="Email:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14"
+                    />
+                <TextView
+                    android:id="@+id/tvProgram"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:hint="Program:"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/bg_bot_message"
+                android:paddingHorizontal="@dimen/margin_8"
+                android:gravity="center"
+                android:paddingVertical="@dimen/margin_10"
+                android:layout_marginHorizontal="@dimen/margin_10">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_image_view"
+                    android:padding="@dimen/margin_10"
+                    android:layout_gravity="start"
+                    android:src="@drawable/ic_graduation_cap"
+                    app:tint="@color/white" />
+                <TextView
+                    android:id="@+id/tvGPA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="GPA: 3.8/4.0"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:textSize="@dimen/font_13"
+                    android:textColor="@color/black"
+                    />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_monitor"
+                    app:tint="@color/appColor" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_16"
+                android:paddingVertical="@dimen/margin_8"
+                android:background="@drawable/bg_bot_message"
+                android:paddingHorizontal="@dimen/margin_10"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_image_view"
+                        android:padding="@dimen/margin_10"
+                        android:layout_gravity="start"
+                        android:src="@drawable/ic_trophy"
+                        app:tint="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Skill Score:"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:textSize="@dimen/font_12"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPercentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_weight="1"
+                            android:text="85% (Advanced)"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_14"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="end"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_monitor"
+                        app:tint="@color/appColor" />
+
+                </LinearLayout>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/valueSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:valueFrom="0"
+                    android:valueTo="100"
+                    android:stepSize="1"
+                    app:trackColorActive="@color/blue"
+                    app:trackColorInactive="@color/greyColor"
+                    app:thumbColor="@color/appColor"
+                    android:layout_marginTop="@dimen/margin_6"
+                    app:haloColor="@color/greyColor"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/bg_bot_message"
+                android:paddingHorizontal="@dimen/margin_10"
+                android:gravity="center"
+                android:paddingVertical="@dimen/margin_8"
+                android:layout_marginHorizontal="@dimen/margin_20">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@drawable/bg_image_view"
+                    android:padding="@dimen/margin_10"
+                    android:src="@drawable/ic_monitor"
+                    app:tint="@color/white" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvSemester"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Current Progress:"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:textSize="@dimen/font_12"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvTrack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="On Track - Phase 2"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="end"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_monitor"
+                    app:tint="@color/appColor" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_16"
+                android:text="Quick Action Buttons"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/btnCareer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_16"
+                android:paddingHorizontal="@dimen/margin_20">
+
+                <LinearLayout
+                    android:id="@+id/btnGpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_quick_btn"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_24"
+                        android:layout_height="@dimen/margin_24"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_graduation_cap"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="GPA"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_3"
+                        android:text="Info"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_12"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnSkill"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:background="@drawable/bg_quick_btn"
+                    android:paddingVertical="@dimen/margin_10"
+                    android:paddingHorizontal="@dimen/margin_20">
+                    <ImageView
+                        android:layout_width="@dimen/margin_24"
+                        android:layout_height="@dimen/margin_24"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_trophy"
+                        app:tint="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_12"
+
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textColor="@color/black"
+                        android:text="Skill Score"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Info"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/font_12"
+
+                        android:layout_marginTop="@dimen/margin_3"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:background="@drawable/bg_quick_btn"
+                    android:paddingVertical="@dimen/margin_10"
+                    android:paddingHorizontal="@dimen/margin_20">
+                    <ImageView
+                        android:layout_width="@dimen/margin_24"
+                        android:layout_height="@dimen/margin_24"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_suitcase"
+                        app:tint="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_12"
+
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textColor="@color/black"
+                        android:text="Career"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Info"
+                        android:layout_gravity="center_horizontal"
+
+                        android:textSize="@dimen/font_12"
+
+                        android:layout_marginTop="@dimen/margin_3"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnRegisterYourself"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register Yourself"
+                android:paddingVertical="@dimen/margin_8"
+                android:paddingHorizontal="@dimen/margin_6"
+                android:layout_marginTop="@dimen/margin_20"
+                android:textSize="@dimen/font_14"
+
+                android:background="@drawable/ic_button_bg"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                />
+            <TextView
+                android:id="@+id/btnLetsStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let's Start Assessment"
+                android:paddingVertical="@dimen/margin_8"
+                android:paddingHorizontal="@dimen/margin_6"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/bg_quick_btn"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_14"
+                android:gravity="center"
+
+                android:layout_marginHorizontal="@dimen/margin_20"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10"
+
+                android:layout_marginHorizontal="@dimen/margin_20">
+                <TextView
+                    android:id="@+id/tvPersonality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personality"
+                    android:gravity="start"
+                    android:layout_gravity="start"
+                    android:paddingHorizontal="@dimen/margin_8"
+                    android:paddingVertical="@dimen/margin_10"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawablePadding="@dimen/margin_3"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawableTint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCareer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:textColor="@color/black"
+                    android:text="Career"
+                    android:drawablePadding="@dimen/margin_3"
+
+                    android:paddingHorizontal="@dimen/margin_8"
+                    android:paddingVertical="@dimen/margin_10"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawableTint="@color/black"
+                    android:drawableStart="@drawable/ic_suitcase"
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:padding="@dimen/margin_10"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Jobs Available"
+                    android:textSize="@dimen/font_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/btnJobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Find Jobs"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:paddingHorizontal="@dimen/margin_8"
+                    android:paddingVertical="@dimen/margin_6"
+                    android:background="@drawable/ic_button_bg"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_3"
+    android:text="Please do assessment first!"
+    android:textColor="@color/black"
+    android:layout_marginBottom="@dimen/margin_50"
+
+    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

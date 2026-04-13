@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Career Path Naviagtion"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_24"/>
+
+        <TextView
+            android:text="Career Assessment"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_40"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+<LinearLayout
+    android:id="@+id/page1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <CheckBox
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I enjoy coding and building software" />
+
+    <CheckBox
+        android:id="@+id/q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I like designing apps, logos or creative visuals" />
+
+    <CheckBox
+        android:id="@+id/q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I enjoy solving logical or mathematical problems" />
+
+    <CheckBox
+        android:id="@+id/q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I like helping people and working in teams" />
+
+    <CheckBox
+        android:id="@+id/q5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am interested in business, startups or management" />
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/page2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/q6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I can easily understand how technology works" />
+
+            <CheckBox
+                android:id="@+id/q7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I enjoy drawing, editing or creating content" />
+
+            <CheckBox
+                android:id="@+id/q8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am good at analyzing data and patterns" />
+
+            <CheckBox
+                android:id="@+id/q9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I communicate well with others" />
+
+            <CheckBox
+                android:id="@+id/q10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" I like planning, organizing or leading tasks" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/page3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/q11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I want to work in software development or IT field" />
+
+            <CheckBox
+                android:id="@+id/q12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I want a career in design, media or creativity" />
+
+            <CheckBox
+                android:id="@+id/q13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I want to work in research or data-related fields" />
+
+            <CheckBox
+                android:id="@+id/q14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I want to work in teaching, HR or public dealing" />
+
+            <CheckBox
+                android:id="@+id/q15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I want to run a business or work in corporate field" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnSubmit"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/ic_button_bg"
+            android:layout_width="match_parent"
+            android:paddingVertical="@dimen/margin_10"
+            android:paddingHorizontal="@dimen/margin_8"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_8"
+            android:textSize="@dimen/margin_16"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Step 1/3"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_16"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_16">
+            <Button android:id="@+id/btnPrevious"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="Previous"
+                android:layout_height="wrap_content"/>
+            <Button android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text="Next"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<resources>
+
+    <string-array name="study_programs">
+        <item>BS Computer Science</item>
+        <item>BS Information Technology</item>
+        <item>BS Data Science</item>
+        <item>BS AI</item>
+        <item>BS Software Engineering</item>
+
+    </string-array>
+
+    <string-array name="semester">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>Completed</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Registration"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Full Name -->
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/name_required"
+            android:textSize="@dimen/font_14"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:paddingVertical="@dimen/margin_8" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_required"
+            android:paddingVertical="@dimen/margin_8"
+            android:textSize="@dimen/font_14"
+
+            android:paddingHorizontal="@dimen/margin_10"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginBottom="12dp"
+            android:inputType="textEmailAddress"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:visibility="gone"
+            android:paddingVertical="@dimen/margin_8"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginBottom="12dp"
+            android:inputType="textPassword"/>
+
+        <!-- GPA -->
+        <EditText
+            android:id="@+id/etGpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/gpa_required"
+            android:paddingVertical="@dimen/margin_8"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:background="@drawable/bg_edit_text"
+            android:layout_marginBottom="12dp"
+            android:textSize="@dimen/font_14"
+            android:inputType="numberDecimal"/>
+
+        <!-- Study Program Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/study_program_required"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Study Program Dropdown -->
+        <Spinner
+            android:id="@+id/spinnerProgram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Register Button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/semester_required"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"/>
+        <Spinner
+            android:id="@+id/spinnerSemester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/margin_10"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:background="@drawable/ic_button_bg"
+            android:text="Register"/>
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</ScrollView>
