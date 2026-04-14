@@ -41,10 +41,11 @@ The Traffic Sensor App is designed to analyze motion data from smartphone sensor
 
 ## 📸 Screenshots
 
-(Add screenshots here)
-
-Example:
-![App Screenshot](screenshots/home.png)
+<p align="center">
+  <img src="ts_1.jpeg" width="180"/>
+  <img src="ts_2.jpeg" width="180"/>
+  <img src="ts_3.jpeg" width="180"/>
+</p>
 
 ---
 
