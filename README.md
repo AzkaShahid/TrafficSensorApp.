@@ -1,16 +1,16 @@
-# 🚦 Traffic Sensor App
+#  Traffic Sensor App
 
 An Android application that uses device sensors to detect movement patterns and evaluate real-time traffic conditions.
 
 ---
 
-## 📱 Overview
+##  Overview
 
 The Traffic Sensor App is designed to analyze motion data from smartphone sensors (and external hardware if connected) to estimate traffic conditions. It processes real-time sensor input and provides a simple visual output for traffic evaluation.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Real-time sensor data collection  
 - Traffic condition evaluation based on movement patterns  
@@ -20,7 +20,7 @@ The Traffic Sensor App is designed to analyze motion data from smartphone sensor
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Kotlin / Java  
 - Android SDK  
@@ -30,7 +30,7 @@ The Traffic Sensor App is designed to analyze motion data from smartphone sensor
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. The app collects motion data using device sensors  
 2. Data is processed in real-time  
@@ -39,7 +39,7 @@ The Traffic Sensor App is designed to analyze motion data from smartphone sensor
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 <p align="center">
   <img src="ts_1.png" width="180"/>
@@ -49,13 +49,13 @@ The Traffic Sensor App is designed to analyze motion data from smartphone sensor
 
 ---
 
-## 🎯 Purpose
+##  Purpose
 
 This project demonstrates how smartphone sensors can be used for real-time data analysis and smart traffic evaluation systems.
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 1. Clone this repository  
 2. Open in Android Studio  
@@ -63,7 +63,7 @@ This project demonstrates how smartphone sensors can be used for real-time data 
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 - AI-based traffic prediction  
 - GPS integration  
@@ -72,7 +72,7 @@ This project demonstrates how smartphone sensors can be used for real-time data 
 
 ---
 
-## 👨‍💻 Developer
+##  Developer
 
 Azka Shahid  
 Android Developer  
